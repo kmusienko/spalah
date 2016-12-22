@@ -22,9 +22,5 @@ public class Run {
             System.out.println(deposit.getName() + " has to pay $" + bank.countMoney(years));
         }
 
-//        for (int i=0;i<3;i++) {
-//            System.out.println(bank.countMoney(years)[i]);
-//        }
-
     }
 }
