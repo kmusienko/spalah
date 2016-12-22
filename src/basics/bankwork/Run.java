@@ -1,5 +1,6 @@
 package basics.bankwork;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -18,9 +19,13 @@ public class Run {
         Scanner sc = new Scanner(System.in);
         System.out.println("Input the number of years: ");
         int years = sc.nextInt();
-        for (int i=0;i<3;i++) {
-            System.out.println(bank.countMoney(years)[i]);
+        for (Deposit deposit : bank.getDeposits()) {
+            System.out.println(deposit.getName() + " has to pay $" + bank.countMoney(years));
         }
+
+//        for (int i=0;i<3;i++) {
+//            System.out.println(bank.countMoney(years)[i]);
+//        }
 
     }
 }
